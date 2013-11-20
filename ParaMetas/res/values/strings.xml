@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ParaMetas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_section1">Treinos</string>
+    <string name="title_section2">Metas</string>
+    <string name="title_section3">Settings</string>
+    <string name="plus_sign">Adicionar</string>
+    
+
+</resources>
