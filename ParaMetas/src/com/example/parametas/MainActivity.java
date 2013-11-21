@@ -16,7 +16,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class MainActivity extends Activity/*FragmentActivity*/ /*implements ActionBar.TabListener*/ {
+public class MainActivity extends Activity{
 	
 	/**
 	   * The serialization (saved instance state) Bundle key representing the
@@ -74,7 +74,7 @@ public class MainActivity extends Activity/*FragmentActivity*/ /*implements Acti
 		    // Handle presses on the action bar items
 		    switch (item.getItemId()) {
 		        case R.id.plus_sign:
-		        	Intent changeActivity = new Intent(MainActivity.this, GoalCreationActivity.class);
+		        	Intent changeActivity = new Intent(MainActivity.this, TrainingCreationActivity.class);
           	 		startActivityForResult(changeActivity, 1);
 		            return true;
 		        
@@ -83,7 +83,7 @@ public class MainActivity extends Activity/*FragmentActivity*/ /*implements Acti
 		}
 
 	
-	  public static class TabListener<T extends ListFragment> implements ActionBar.TabListener {
+	  public static class TabListener<T> implements ActionBar.TabListener {
 	        private final Activity mActivity;
 	        private final String mTag;
 	        private final Class<T> mClass;

@@ -32,15 +32,14 @@ public final class R {
         public static final int button3=0x7f080007;
         public static final int button4=0x7f080005;
         public static final int button5=0x7f080001;
-        public static final int datePicker1=0x7f08000d;
-        public static final int descricao=0x7f08000c;
+        public static final int buttonNewGoal=0x7f08000d;
         public static final int editText1=0x7f080003;
         public static final int editText2=0x7f080002;
         public static final int imageView1=0x7f080000;
-        public static final int listView1=0x7f08000e;
         public static final int metas=0x7f080009;
-        public static final int nome=0x7f08000b;
-        public static final int plus_sign=0x7f08000f;
+        public static final int plus_sign=0x7f08000e;
+        public static final int textTrainingDescription=0x7f08000c;
+        public static final int textTrainingName=0x7f08000b;
         public static final int treino=0x7f080008;
     }
     public static final class layout {
@@ -48,7 +47,6 @@ public final class R {
         public static final int activity_goal_detailed=0x7f030001;
         public static final int activity_training_creation=0x7f030002;
         public static final int main_layout=0x7f030003;
-        public static final int training_list_activity=0x7f030004;
     }
     public static final class menu {
         public static final int actionbar=0x7f070000;
@@ -56,10 +54,13 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
+        public static final int newGoal=0x7f050008;
         public static final int plus_sign=0x7f050005;
         public static final int title_section1=0x7f050002;
         public static final int title_section2=0x7f050003;
         public static final int title_section3=0x7f050004;
+        public static final int trainingDescription=0x7f050007;
+        public static final int trainingName=0x7f050006;
     }
     public static final class style {
         /** 

@@ -5,8 +5,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_section1">Treinos</string>
     <string name="title_section2">Metas</string>
-    <string name="title_section3">Settings</string>
+    <string name="title_section3">Ajustes</string>
     <string name="plus_sign">Adicionar</string>
+    <string name="trainingName">Nome</string>
+    <string name="trainingDescription">Descrição</string>
+    <string name="newGoal">Nova Meta</string>
     
 
 </resources>
