@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="13"
+        android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
     <application
@@ -13,7 +13,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity         
+        <activity
             android:name="com.example.parametas.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
@@ -22,32 +22,41 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       	<activity 
-            android:name=".TrainingsActivity"
-            android:label="@string/app_name">       
-        </activity>
-        <activity 
-            android:name=".GoalsActivity"
-            android:label="@string/app_name">       
-        </activity>
-        <activity 
-            android:name=".SettingsActivity"
-            android:label="@string/app_name">       
+        <activity
+            android:name="com.example.parametas.TrainingsActivity"
+            android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".GoalCreationActivity"
-            android:label="@string/title_section2"
-            > 
+            android:name="com.example.parametas.GoalsActivity"
+            android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".GoalDetailedActivity"
-            android:label="@string/app_name"
-            > 
+            android:name="com.example.parametas.SettingsActivity"
+            android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".TrainingCreationActivity"
-            android:label="@string/title_section1"
-            > 
+            android:name="com.example.parametas.GoalCreationActivity"
+            android:label="@string/title_section2" >
+        </activity>
+        <activity
+            android:name="com.example.parametas.GoalDetailedActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.parametas.TrainingCreationActivity"
+            android:label="@string/title_section1" >
+        </activity>
+        <activity
+            android:name="com.example.parametas.GoalsTempActivity"
+            android:label="@string/title_activity_goals_temp" >
+        </activity>
+        <activity
+            android:name="com.example.parametas.TrainingDescriptionActivity"
+            android:label="@string/title_section2" >
+        </activity>
+        <activity
+            android:name="com.example.parametas.IntrActivity"
+            android:label="@string/title_activity_intr" >
         </activity>
     </application>
 

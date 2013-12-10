@@ -8,125 +8,86 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".GoalCreationActivity" >
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/rect" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_marginBottom="24dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="188dp"
-        android:text="De" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/button1"
-        android:text="Até" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/button5"
-        android:text="Meta" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/button4"
-        android:text="Unidade" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="67dp"
-        android:ems="10"
-        android:inputType="none" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:text="Alcançado" />
-
-    <TabHost
-        android:id="@android:id/tabhost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true" >
+        android:layout_height="wrap_content" >
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TabWidget
-                android:id="@android:id/tabs"
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Nadar 2.000m"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Nadar 2.000m um 1m por dia"
+                android:inputType="none" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@dimen/activity_vertical_margin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-            </TabWidget>
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="17dp"
+                android:text="De: 19/05/2013" />
 
-            <FrameLayout
-                android:id="@android:id/tabcontent"
+            <Button
+                android:id="@+id/button5"
+                style="@dimen/activity_vertical_margin"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:text="Até: 25/05/2013" />
 
-                <LinearLayout
-                    android:id="@+id/treino"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:ignore="Orientation" >
+            <Button
+                android:id="@+id/button4"
+                style="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:text="Meta: 20" />
 
-                </LinearLayout>
+            <Button
+                android:id="@+id/btnOk"
+                style="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:text="Unidade: Km" />
 
-                <LinearLayout
-                    android:id="@+id/metas"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:ignore="Orientation" >
+            <Button
+                android:id="@+id/button3"
+                style="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:text="Alcançado: 10" />
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ajustes"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:ignore="Orientation" >
-                </LinearLayout>
-            </FrameLayout>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="0.47"
+                android:src="@drawable/rect" />
         </LinearLayout>
-    </TabHost>
+    </ScrollView>
 
 </RelativeLayout>

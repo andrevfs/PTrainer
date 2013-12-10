@@ -10,6 +10,13 @@
     <string name="trainingName">Nome</string>
     <string name="trainingDescription">Descrição</string>
     <string name="newGoal">Nova Meta</string>
-    
-
+    <string name="title_activity_goals_temp">GoalsTempActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit">Editar</string>
+    <string name="discard_sign">Remover</string>
+    <string name="title_activity_intr">IntrActivity</string>
+    <string name="escolher">Escolher</string>
+	<string name="cancel">Cancelar</string>
+	<string name="uid1">1</string>
+	<string name="uid2">2</string>
 </resources>

@@ -1,41 +1,89 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
-     <EditText 
-        android:id="@+id/textTrainingName"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="2dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:maxLength="20"
-        android:minWidth="220dp"
-        android:hint="@string/trainingName"
-        android:padding="10dp"
-        android:inputType="textShortMessage"/>
-      
-     
-    <EditText 
-        android:id="@+id/textTrainingDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/textTrainingName"
-		android:minWidth="220dp"
-		android:hint="@string/trainingDescription"
-		android:padding="10dp" 
-		android:inputType="textShortMessage"/>
-    
-    <Button
-        android:id="@+id/buttonNewGoal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/newGoal"
-        android:minWidth="220dp"
-        android:padding="10dp"
-        android:layout_below="@+id/textTrainingDescription"
-        />   
-        
- 
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/textTrainingName"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Digite o nome do treino"
+                android:inputType="textShortMessage"
+                android:maxLength="20"
+                android:minWidth="220dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/textTrainingDescription"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:hint="Digite a descrição do treino"
+                android:inputType="textShortMessage"
+                android:minWidth="220dp"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correr 20 km - de 19/05/2013 a 25/05/2013"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <ImageView
+                    android:id="@+id/ImageView07"
+                    android:layout_width="300dp"
+                    android:layout_height="3dp"
+                    android:src="@drawable/bar" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/rect" />
+
+                <ImageView
+                    android:id="@+id/ImageView06"
+                    android:layout_width="300dp"
+                    android:layout_height="3dp"
+                    android:src="@drawable/bar" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/newGoal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="0.01"
+                android:minWidth="220dp"
+                android:padding="10dp"
+                android:text="Selecionar Metas" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </RelativeLayout>

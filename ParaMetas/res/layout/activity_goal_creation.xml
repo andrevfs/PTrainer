@@ -8,78 +8,88 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".GoalCreationActivity" >
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_marginBottom="60dp"
-        android:src="@drawable/rect" />
+        android:layout_height="wrap_content" >
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_marginBottom="24dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="188dp"
-        android:text="De" />
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Digite o título da meta"
+                android:inputType="textPersonName" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/button1"
-        android:text="Até" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Digite a descrição da meta"
+                android:inputType="none" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/button5"
-        android:text="Meta" />
+            <Button
+                android:id="@+id/button1"
+                style="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="17dp"
+                android:onClick="showDatePickerDialog"
+                android:text="De:" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/button4"
-        android:text="Unidade" />
+            <Button
+                android:id="@+id/button5"
+                style="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="showDatePickerDialog"
+                android:text="Até:" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="67dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+            <Button
+                android:id="@+id/button4"
+                style="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:onClick="showNumberDialog"
+                android:text="Meta:" />
 
-    <Button
-        android:id="@+id/button3"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageView1"
-        android:text="Create" 
-        android:onClick="createGoal"/>
+            <Button
+                android:id="@+id/button2"
+                style="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:text="Unidade:"
+                android:onClick="createUnit" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:onClick="colorPicker"
+                android:src="@drawable/rect" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Confirmar"
+                android:onClick="createGoal" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

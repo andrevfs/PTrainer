@@ -18,11 +18,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity{
 	
-	/**
-	   * The serialization (saved instance state) Bundle key representing the
-	   * current tab position.
-	   */
-
+	  ActionBar ab;
 	  private static final String STATE_SELECTED_NAVIGATION_ITEM = "selected_navigation_item";
 
 	  @Override
@@ -45,6 +41,8 @@ public class MainActivity extends Activity{
 	    if (savedInstanceState != null) {
             actionBar.setSelectedNavigationItem(savedInstanceState.getInt("tab", 0));
         }
+	    
+	    ab = actionBar;
 	  }
 
 	  @Override
@@ -74,13 +72,21 @@ public class MainActivity extends Activity{
 		    // Handle presses on the action bar items
 		    switch (item.getItemId()) {
 		        case R.id.plus_sign:
-		        	Intent changeActivity = new Intent(MainActivity.this, TrainingCreationActivity.class);
-          	 		startActivityForResult(changeActivity, 1);
-		            return true;
-		        
+		        	if(ab.getSelectedTab().getPosition() == 0){
+		        		TrainingCreationActivity.next = 0;
+			        	Intent changeActivity = new Intent(MainActivity.this, TrainingCreationActivity.class);
+	          	 		startActivityForResult(changeActivity, 1);
+			            return true;
+		        	}
+		        	if(ab.getSelectedTab().getPosition() == 1){
+			        	Intent changeActivity = new Intent(MainActivity.this, GoalCreationActivity.class);
+	          	 		startActivityForResult(changeActivity, 1);
+			            return true;
+		        	}
 		    }
 			return false;
 		}
+	  
 
 	
 	  public static class TabListener<T> implements ActionBar.TabListener {
