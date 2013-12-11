@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView 
+        android:id="@+id/lvSettings"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+    
+   <!--  <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:text="Interface simplificada" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:text="A interface conterá mais telas, porém com menos menus e ferramentas de tamanho pequeno" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Ativar alerta" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.76"
+            android:text="Ativar que alertas sejam mostrados sempre a data de uma meta expirar" />
+    </LinearLayout> -->
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical" 
+    >
+	
+    <TextView
+        android:id="@+id/tvGoalDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="17dp"       
+  		android:text=""
+  		android:gravity="left|center_vertical"
+    />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:paddingTop="1dp"
+	    android:orientation="horizontal" 
+	    >
+	    
+	    <SeekBar
+	        android:id="@+id/sbGoal"
+	        android:thumb="@drawable/thumb"
+	        android:progressDrawable="@drawable/progress" 
+	        android:layout_height="fill_parent"
+	        android:layout_width="fill_parent"
+	        android:max="100"
+	        android:progress="20"	        
+	        android:padding="0dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@+id/ibUpdateGoal"
+	    		    	
+	    >
+	    </SeekBar>
+	    
+	    <TextView 
+	        android:id="@+id/tvSbHint"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:gravity="center"
+	        android:text=""
+	        android:textSize="25sp"
+	        
+	        />
+	    
+ 	    <ImageButton
+		    android:id="@+id/ibUpdateGoal"
+		    android:layout_height="fill_parent"
+		    android:layout_width="40dp"
+		    android:layout_alignParentRight="true"
+		    android:src="@drawable/edit_sign"
+		    android:background="@android:color/holo_orange_dark"
+		    android:contentDescription="@string/edit"
+		/> 
+    </RelativeLayout>
+    
+
+</LinearLayout>
