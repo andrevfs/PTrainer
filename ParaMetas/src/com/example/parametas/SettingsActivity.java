@@ -2,14 +2,9 @@ package com.example.parametas;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import android.app.Activity;
-import android.app.Fragment;
 import android.app.ListFragment;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 public class SettingsActivity extends ListFragment{
 

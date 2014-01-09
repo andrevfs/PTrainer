@@ -39,39 +39,6 @@
                 android:minWidth="220dp"
                 android:padding="10dp" />
 
-            <LinearLayout
-                android:id="@+id/linearLayout1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Correr 20 km - de 19/05/2013 a 25/05/2013"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
-
-                <ImageView
-                    android:id="@+id/ImageView07"
-                    android:layout_width="300dp"
-                    android:layout_height="3dp"
-                    android:src="@drawable/bar" />
-
-                <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/rect" />
-
-                <ImageView
-                    android:id="@+id/ImageView06"
-                    android:layout_width="300dp"
-                    android:layout_height="3dp"
-                    android:src="@drawable/bar" />
-            </LinearLayout>
-
             <Button
                 android:id="@+id/newGoal"
                 android:layout_width="match_parent"

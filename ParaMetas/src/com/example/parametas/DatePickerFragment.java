@@ -1,12 +1,10 @@
 package com.example.parametas;
 
 import java.util.Calendar;
-
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.os.Bundle;
-import android.webkit.WebView.FindListener;
 import android.widget.Button;
 import android.widget.DatePicker;
 
@@ -29,6 +27,10 @@ public class DatePickerFragment extends DialogFragment
     public void onDateSet(DatePicker view, int year, int month, int day) {
     	final Button testButton = (Button) getActivity().findViewById(this.id);
 		testButton.setText(this.initial+" "+day+"/"+(month+1)+"/"+year);
+		if(this.initial.equals("De:"))
+			GoalCreationActivity.start_time = day+"/"+(month+1)+"/"+year;
+		else
+			GoalCreationActivity.end_time = day+"/"+(month+1)+"/"+year;
     }
     
 	public void setId(int id) {

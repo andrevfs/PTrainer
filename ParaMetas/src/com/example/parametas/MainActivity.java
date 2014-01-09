@@ -1,48 +1,59 @@
 package com.example.parametas;
 
-
-
-
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-import android.app.ListFragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends Activity{
-	
+	Bundle savedInstanceState2;
 	  ActionBar ab;
 	  private static final String STATE_SELECTED_NAVIGATION_ITEM = "selected_navigation_item";
 
 	  @Override
 	  protected void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.main_layout);
-
-	    // Set up the action bar to show tabs.
-	    final ActionBar actionBar = getActionBar();
-	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-
-	    // for each of the sections in the app, add a tab to the action bar.
-	    actionBar.addTab(actionBar.newTab().setText(R.string.title_section1)
-	        .setTabListener(new TabListener<TrainingsActivity>(this,"trainings",TrainingsActivity.class)));
-	    actionBar.addTab(actionBar.newTab().setText(R.string.title_section2)
-	        .setTabListener(new TabListener<GoalsActivity>(this,"goals",GoalsActivity.class)));
-	    actionBar.addTab(actionBar.newTab().setText(R.string.title_section3)
-	        .setTabListener(new TabListener<SettingsActivity>(this,"settings",SettingsActivity.class)));
+	    setContentView(R.layout.capa_activity);
 	    
-	    if (savedInstanceState != null) {
-            actionBar.setSelectedNavigationItem(savedInstanceState.getInt("tab", 0));
-        }
+	    savedInstanceState2 = savedInstanceState;
+	    new CountDownTimer(2000, 1000) {
+
+	    	   public void onTick(long millisUntilFinished) {
+	    	   }
+
+	    	   public void onFinish() {
+	    	       setContentView(R.layout.main_layout);
+	    	       teste(savedInstanceState2);
+	    	   }
+
+	    	}.start();
 	    
-	    ab = actionBar;
+	  }
+	  public void teste(Bundle savedInstanceState){
+		    final ActionBar actionBar = getActionBar();
+		    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+		    // for each of the sections in the app, add a tab to the action bar.
+		    actionBar.addTab(actionBar.newTab().setText(R.string.title_section1)
+		        .setTabListener(new TabListener<TrainingsActivity>(this,"trainings",TrainingsActivity.class)));
+		    actionBar.addTab(actionBar.newTab().setText(R.string.title_section2)
+		        .setTabListener(new TabListener<GoalsActivity>(this,"goals",GoalsActivity.class)));
+		    actionBar.addTab(actionBar.newTab().setText(R.string.title_section3)
+		        .setTabListener(new TabListener<SettingsActivity>(this,"settings",SettingsActivity.class)));
+		    
+		    if (savedInstanceState != null) {
+	            actionBar.setSelectedNavigationItem(savedInstanceState.getInt("tab", 0));
+	        }
+		    
+		    ab = actionBar;
 	  }
 
 	  @Override

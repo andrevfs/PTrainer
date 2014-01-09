@@ -60,8 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="3dp"
-                android:onClick="showNumberDialog"
-                android:text="Meta:" />
+                android:text="Meta:"  />
 
             <Button
                 android:id="@+id/button2"
@@ -85,8 +84,7 @@
                 android:height="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
-                android:text="Confirmar"
-                android:onClick="createGoal" />
+                android:text="Confirmar"/>
 
         </LinearLayout>
 

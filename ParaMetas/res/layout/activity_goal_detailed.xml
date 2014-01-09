@@ -25,7 +25,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:ems="10"
-                android:hint="Nadar 2.000m"
                 android:inputType="textPersonName" >
 
                 <requestFocus />
@@ -36,49 +35,43 @@
                 android:layout_width="290dp"
                 android:layout_height="40dp"
                 android:ems="10"
-                android:hint="Nadar 2.000m um 1m por dia"
                 android:inputType="none" />
 
             <Button
-                android:id="@+id/btnCancel"
+                android:id="@+id/button1"
                 style="@dimen/activity_vertical_margin"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="3dp"
-                android:layout_marginTop="17dp"
-                android:text="De: 19/05/2013" />
+                android:layout_marginTop="17dp" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/button2"
                 style="@dimen/activity_vertical_margin"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginBottom="3dp"
-                android:text="Até: 25/05/2013" />
-
-            <Button
-                android:id="@+id/button4"
-                style="@dimen/activity_vertical_margin"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginBottom="3dp"
-                android:text="Meta: 20" />
-
-            <Button
-                android:id="@+id/btnOk"
-                style="@dimen/activity_vertical_margin"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginBottom="3dp"
-                android:text="Unidade: Km" />
+                android:layout_marginBottom="3dp" />
 
             <Button
                 android:id="@+id/button3"
                 style="@dimen/activity_vertical_margin"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginBottom="3dp"
-                android:text="Alcançado: 10" />
+                android:layout_marginBottom="3dp"/>
+
+            <Button
+                android:id="@+id/button4"
+                style="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"/>
+
+            <Button
+                android:id="@+id/button5"
+                style="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"/>
 
             <ImageView
                 android:id="@+id/imageView1"
